@@ -1,0 +1,161 @@
+/*
+Theme Name: Astra Child
+Theme URI: https://mon-nouveau-site.fr
+Description: Thème enfant Astra
+Author: Olivier Facelina
+Author URI: https://lamanu.fr/
+Template: astra
+Version: 1.0
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.site-content {
+    margin-bottom: 5vh;
+}
+
+.site-content .ast-container {
+    display: block;
+}
+
+.site__heading {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.site__game {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 5vh; 
+}
+
+.project-card {
+    background-color: #ede8e8;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 5vh;
+}
+
+.project-card__link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-card__image {
+    height: 200px; 
+    overflow: hidden;
+}
+
+.project-card__image img {
+    margin-top: 2vh;
+    width: 100%;
+    height: 100%; 
+    object-fit: contain;
+}
+
+
+.project-card__content {
+    padding: 15px 15px 0 15px;
+}
+
+.project-card__title {
+    margin: 0;
+    font-size: 18px;
+}
+
+.project-card__excerpt {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+@media screen and (max-width: 900px) {
+    .site__game {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .site__game {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+}
+
+/* SINGLE */
+
+.single-game-card, .single-collaborator-card {
+    display: grid;
+    grid-template-columns: auto 1fr; 
+    gap: 20px; 
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.game-image, .collaborator-image {
+    display: grid;
+    grid-template-columns: auto; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 5vh;
+}
+
+.game-image h2 {
+    margin-top: 0;
+}
+
+.game-details {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding: 5vh;
+}
+
+.game-details p {
+    margin: 0;
+}
+
+.game-details p:last-child {
+    align-content: center;
+}
+
+.single-game-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10vh;
+}
+
+.description, .rules, .collaborators, .comments, .games-affiliated {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 5vh;
+}
+
+.description h2, .rules h2, .comments h2 {
+    margin-bottom: 5vh;
+}
+
+.collaborators, .comments {
+    margin-top: 5vh;
+}
+
+.collaborator-image img {
+    max-width: 50%;
+    height: auto;
+    max-height: 400px;
+    margin-bottom: 3vh;
+}
+
+.project-collab-card {
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: auto 1fr; 
+    gap: 10vh; 
+}
